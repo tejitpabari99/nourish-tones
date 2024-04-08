@@ -19,7 +19,7 @@ const ItemLists = {
         // Other cusine non-veg terms
         "chorizo", "andouille", "boudin", "blood", "pate", "liver", "gizzard", "intestine", "intestines", "tripe",
         // Dishes that are typically non-veg
-        "brisket", "tenderloin", "fillet", "cutlet", "nugget", "wing","drumstick", "thigh", "leg", "breast", "rib", "rack", "meatball",
+        "brisket", "tenderloin", "fillet", "cutlet", "nugget", "wing","drumstick", "thigh", "leg", "breast", "rib", "rack", "meatball", "sirloin"
     ],
     vegItemList: [
         "veggie", "vegetarian"
