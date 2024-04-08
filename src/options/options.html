@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Nourish Tones</title>
+    <style>
+        .container {
+            display: flex; /* Use flexbox layout for alignment and spacing */
+            flex-direction: column; /* Stack children vertically */
+            padding: 10px; /* Add some padding around the container */
+            margin: 10px; /* Add some margin outside the container */
+        }
+
+        .innerContainer {
+            width: 500px;
+        }
+
+        /* Style for individual option elements within the container */
+        .option {
+            margin-bottom: 8px; /* Add space between options */
+        }
+
+        /* Style for buttons or interactive elements */
+        .button {
+            padding: 8px 16px;
+            background-color: #0078d4;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            background-color: #005a9e; /* Darken button color on hover */
+        }
+
+        .save {
+            color: green;
+        }
+
+        textarea {
+            width: 100%;
+            height: 100px;
+            padding: 8px 8px;
+            box-sizing: border-box;
+            font-size: 14px;
+            resize: none;
+        }
+        
+        p, label {
+            font-size: 15px;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+        <h1>Nourish Tones</h1>
+        <div class="innerContainer">
+            <div style="display: flex; flex-direction: row;" class="option">
+                <p style="margin-right: 20px;">Default Diet: </p>
+                <select id="default_diet" style="margin-top: auto; margin-bottom: auto; margin-right: auto;">
+                    <option value=""></option>
+                    <option value="veg">Vegetarian</option>
+                    <option value="vegNoEgg">Vegetarian (No Egg)</option>
+                    <option value="vegan">Vegan</option>
+                    <option value="pascaterian">Pascaterian</option>
+                </select>
+            </div>
+
+            <div style="display: flex; flex-direction: row;">
+                <p style="margin-right: 42px;">Allergies: </p>
+                <textarea id="allergiesList" name="allergiesList" rows="4" cols="100" placeholder="Add comma separated list of allergies here"></textarea>
+            </div>
+            <div style="display: flex; flex-direction: row; margin-top: 2px;" class="option">
+                <input type="checkbox" id="allergiesDefault" name="allergiesDefault" value="true" style="margin-right: 5px;" checked>
+                <label for="allergiesDefault">Mark allergies by default</label>
+            </div>
+            
+            <button id="save" class="option">Save</button>
+            <div id="status" class="save option"></div>
+        </div>
+    </div>
+    <script src="options.js"></script>
+  </body>
+</html>
